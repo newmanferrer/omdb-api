@@ -1,0 +1,244 @@
+body {
+ display: flex;
+ flex-direction: column;
+}
+
+.header,
+.footer {
+ width: 100vw;
+ height: 5vh;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ position: fixed;
+ z-index: 1000;
+
+ background-color: $background-color-2;
+}
+
+.header {
+ top: 0;
+}
+
+.footer {
+  bottom: 0;
+}
+
+.main {
+ width: 100vw;
+ height: 90vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-grow: 1;
+
+  &-form-container {
+   width: 90vw;
+   height: 50vh;
+   padding: 3vh;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   color: $text-color-2;
+
+   border: none;
+   border-radius: 10px;
+   background-color: $background-color-1;
+
+    &__title {
+     margin-bottom: 0.5rem;
+     font-size: 2rem;
+    }
+
+    &__subtitle {
+     margin-bottom: 1.2rem;
+     font-size: 1rem;
+     font-style: italic;
+    }
+
+    &__form {
+     width: 80vw;
+
+     display: flex;
+     flex-direction: column;
+
+      &__field {
+       padding-bottom: 0.7rem;
+       display: flex;
+       flex-direction: column;
+
+        .login-label {
+         padding-bottom: 0.2rem;
+         font-weight: bold;
+        }
+
+        .login-input {
+         padding: 0.3rem; 
+         outline: none;
+        }
+      }
+
+      &__button {
+       margin-top: 1rem;
+       padding: 0.5rem 0;
+
+       font-size: 1.2rem;
+       color: $text-color-1; 
+
+       outline: none;
+       transition: 0.5s ease-in-out;
+       
+       border: none;
+       border-radius: 5px; 
+       background-color: $background-color-2;
+      }
+
+      &__button:hover {
+       cursor: pointer;
+       transition: 0.5s ease-in-out;
+       background-color: $body-background-image-1;
+      }
+
+      &__button:active {
+       transform: scale(0.99);
+      }
+
+      &__loader,
+      &__response {
+       margin-top: 1rem;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      }
+
+      &__response {
+       margin-top: 1px;
+
+       &__paragraph {
+        font-weight: bold;
+       }
+      }
+    }
+  }
+}
+
+.form-input-error {
+ margin-top: 0;
+ padding: 0.3rem 0;
+
+ text-align: center;
+ font-size: 100%;
+ color: $text-color-1;
+
+ transition: all 800ms ease;
+ background-color: $login-form-error-color;
+}
+
+.form-input-error.is-active {
+ display: block;
+ animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-message {
+ 0% {
+   visibility: hidden;
+   opacity: 0;
+ }
+
+ 50% {
+   visibility: visible;
+   opacity: 0.5;
+ }
+
+ 100% {
+   visibility: visible;
+   opacity: 1;
+ }
+}
+
+.none {
+ display: none;
+}
+
+.onLine,
+.offLine {
+ width: 98vw;
+ height: 2vh;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ position: fixed;
+ bottom: 1.50vh;
+ z-index: 2000;
+ 
+ animation: show-networkStatus 1s 1 normal 0s ease-out both;
+
+ color: $text-color-1;
+ border-radius: 5px;
+}
+
+.onLine {
+ background-color: $onLine-color;
+}
+
+.offLine {
+  background-color: $offLine-color;
+
+/* ANIMACIÓN CUANDO SE MUESTRA EL ESTATUS DE LA RED (networkStatus) 
+=========================================================================== */
+@keyframes show-networkStatus {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  50% {
+    visibility: visible;
+    opacity: 0.5;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+/* ======================================================================== */
+}
+
+/* LARGE SCREEN (768px o Superior)
+=========================================================================== */
+@media screen and (min-width: 768px) {
+ .main {
+  &-form-container {
+    width: 60vw;
+    height: 45vh;
+   &__form {
+    width: 50vw;
+   }
+  }
+ }
+}
+/* ======================================================================== */
+
+/* LARGE SCREEN (1024px o Superior)
+=========================================================================== */
+@media screen and (min-width: 1024px) {
+  .main {
+   &-form-container {
+     width: 55vw;
+     height: 35vh;
+    &__form {
+     width: 45vw;
+    }
+   }
+  }
+ }
+/* ======================================================================== */

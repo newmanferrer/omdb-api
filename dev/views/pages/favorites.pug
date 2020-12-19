@@ -1,0 +1,18 @@
+extends ../templates/template.pug
+
+block main
+ main.main-favorites
+  .main-favorites__panel
+  .main-favorites__user(data-light)
+    .main-favorites__user__divButton
+      button.main-favorites__user__divButton__button#favoritesButtonHome 🏠
+    .main-favorites__user__divTitle
+      h2.main-favorites__user__divTitle__title Mis favoritos
+    .main-favorites__user__divLabelSpan
+      label.main-favorites__user__divLabelSpan__label 🎬
+      span.main-favorites__user__divLabelSpan__span#favoritesSpan
+  .main-favorites__loaders.none#favorites-loader
+    img(src="assets/svg-loaders/oval-blanco.svg", alt="Cargando")
+  .main-favorites__moviesContainer.none#favoritesMoviesContainer(data-light)
+  .main-favorites__errorMessages
+  button.scroll-top-btn.hidden &#11014;

@@ -1,0 +1,33 @@
+extends ../templates/template.pug
+
+block main
+ main.main-search
+  .main-search__panel
+  .main-search__user(data-light)
+    label.main-search__user__label Bienvenido: 
+    span.main-search__user__span
+    label.main-search__user__label Tema:
+    .main-search__user__theme__icon ☀️
+    button.main-search__user__button Salir
+  .main-search__favorites.none(data-light)
+    button.main-search__favorites__button#favoritesButton Mis favoritos
+  .main-search__search
+    form.main-search__search__form#formSearch
+      input(type="search" name="search" autocomplete="off" placeholder="titulo a buscar...").main-search__search__form__input
+      button.main-search__search__form__button 🔍
+  .main-search__lastSearch.none
+    label.main-search__lastSearch__label Última busqueda:
+    span.main-search__lastSearch__span
+  .main-search__lastResult.none
+    label.main-search__lastResult__label Resultados:
+    span.main-search__lastResult__span
+  .main-search__pagination.none
+    label.main-search__pagination__last ◀️
+    span.main-search__pagination__span 
+    label.main-search__pagination__next ▶️
+  .main-search__loaders.none#search-loader
+    img(src="assets/svg-loaders/oval-blanco.svg", alt="Cargando")
+  .main-search__movies.none#moviesDiv(data-light)
+  .main-search__modal-movies#modalMovies(data-light)
+  .main-search__errorMessages.none
+  button.scroll-top-btn.hidden &#11014;

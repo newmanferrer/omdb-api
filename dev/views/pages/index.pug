@@ -1,0 +1,19 @@
+extends ../templates/template.pug
+
+block main
+ main.main
+  .main-form-container
+   h2.main-form-container__title Bienvenido
+   h3.main-form-container__subtitle Ingresa para buscar todas tus peliculas
+   form.main-form-container__form#formLogin
+    .main-form-container__form__field
+     label(for="user").login-label Nombre de usuario
+     input(type="text" name="username" id="user" required pattern="^([A-Za-z]{6,12})$" title="Letras, 6 a 12 caracteres sin espacios" autocomplete="off" placeholder="ingresa tu usuario").login-input
+    .main-form-container__form__field
+     label(for="contrasena").login-label Contraseña
+     input(type="password" name="password" id="contrasena" required pattern="^([A-Za-z0-9]{6,8})$" title="Letras, números, 6 a 8 caracteres sin espacios" placeholder="ingresa tu contraseña").login-input
+    button(type="submit").main-form-container__form__button Ingresar
+    .main-form-container__form__loader.none#login-loader
+     img(src="assets/svg-loaders/oval-negro.svg", alt="Cargando")
+    .main-form-container__form__response.none#login-response
+     p.main-form-container__form__response__paragraph acceso permitido

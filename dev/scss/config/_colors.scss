@@ -1,0 +1,47 @@
+:root {
+    --text-color-1: #fff;
+    --text-color-2: #000;
+    --text-color-highlighted: #ffff00;
+
+    --background-color-1: #fff;
+    --background-color-2: #000;
+    --background-color-3: #222222;
+
+    --background-color-modal: rgba(0, 0, 0, 0.6);
+
+    --body-background-image-1: #707676;
+    --body-background-image-2: #111313;   
+    
+    --login-form-ok-color: #4caf50;
+    --login-form-error-color:  #ff2929;
+
+    --alert-color: #fba905;
+    --primary-danger-color: #b70e21;
+    --secundary-danger-color: #ff0000;
+
+    --onLine-color: #004f03;
+    --offLine-color: #910000;
+}
+
+$text-color-1: var(--text-color-1); 
+$text-color-2: var(--text-color-2); 
+$text-color-highlighted: var(--text-color-highlighted); 
+
+$background-color-1: var(--background-color-1);
+$background-color-2: var(--background-color-2);
+$background-color-3: var(--background-color-3);
+
+$background-color-modal: var(--background-color-modal);
+
+$body-background-image-1: var(--body-background-image-1);
+$body-background-image-2: var(--body-background-image-2);
+
+$login-form-ok-color: var(--login-form-ok-color);
+$login-form-error-color: var(--login-form-error-color);
+
+$alert-color: var(--alert-color);
+$primary-danger-color: var(--primary-danger-color);
+$secundary-danger-color: var(--secundary-danger-color);
+
+$onLine-color: var(--onLine-color);
+$offLine-color: var(--offLine-color);
