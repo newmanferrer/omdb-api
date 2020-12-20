@@ -14,7 +14,7 @@ const moviesForPage = 10;
 //* 1.2.- API OMDB DATOS Y END POINTS.
 //* ---------------------------------------------------------------------------------------------
 const KEY = '7bdaf2a9';
-const DOMAIN = 'http://www.omdbapi.com';
+const DOMAIN = 'https://www.omdbapi.com';
 const API_KEY = `/?apikey=${KEY}`;
 const URL_BASE = `${DOMAIN}${API_KEY}&`;
 const END_POINT_MOVIE = `${URL_BASE}i=`;
