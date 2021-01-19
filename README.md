@@ -33,13 +33,19 @@ A continuación, algunas de sus  características y funcionalidades:
 
 ## Requisitos (Usuarios).
 1.- Navegador Web.
-2.- https://newmanferrer.github.io/omdb-apip/
+2.- https://newmanferrer.github.io/omdb-api/ (Solo por tiempo limitado).
+3.- https://omdb-api.000webhostapp.com/index.html (Solo por tiempo limitado).
 
-## Instalación
+## Instalación (Desarrolladores).
 1.- Clonar el repositorio: https://github.com/newmanferrer/omdb-api.git
 1.- Otra opción es descargar el repositorio mediante formato ZIP.
 2.- Instalar las dependencias mediante el comando “npm install”, desde la consola del terminal.
 3.- Desde la consola del terminal ejecutar el comando “gulp”, para ejecutar el servidor de desarrollo, compilar, transpilar y minificar u ofuscación del código.
+
+## Instalación (Usuarios).
+1.- Clonar el repositorio: https://github.com/newmanferrer/omdb-api.git
+2.- Otra opción es descargar el repositorio mediante formato ZIP.
+3.- Ejecutar el archivo index.html que se encuentra dentro de la carpeta “public”, desde cualquier servidor de desarrollo como por ejemplo “Live Server”. Lo anterior mostrara la aplicación web en el navegador.
 
 
 # OMDB API.
@@ -77,10 +83,16 @@ Here are some of its features and functionalities:
 
 ## Requirements (Users).
 1.- Web browser.
-2.- https://newmanferrer.github.io/omdb-apip/
+2.- https://newmanferrer.github.io/omdb-api (Only for a limited time).
+3.- https://omdb-api.000webhostapp.com (Only for a limited time).
 
-## Installation
+## Installation (Developers).
 1.- Clone the repository: https://github.com/newmanferrer/omdb-api.git
-1.- Another option is to download the repository using ZIP format.
-2.- Install the dependencies using the command "npm install", from the terminal console.
-3.- From the terminal console, execute the “gulp” command, to run the development server, compile, transpile and minify or obfuscate the code.
+2.- Another option is to download the repository using ZIP format.
+3.- Install the dependencies using the command "npm install", from the terminal console.
+4.- From the terminal console, execute the “gulp” command, to run the development server, compile, transpile and minify or obfuscate the code.
+
+## Installation (Users).
+1.- Clone the repository: https://github.com/newmanferrer/omdb-api.git
+2.- Another option is to download the repository using ZIP format.
+3.- Execute the index.html file found inside the “public” folder, from any development server such as “Live Server”. The above will show the web application in the browser.
